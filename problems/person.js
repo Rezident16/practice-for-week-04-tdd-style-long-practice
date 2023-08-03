@@ -1,5 +1,12 @@
 class Person {
-  // Your code here
+
+  constructor(name, age) {
+
+    this.name = name
+   
+  }
+
+
 }
 
 module.exports = Person;
