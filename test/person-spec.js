@@ -38,7 +38,7 @@ beforeEach(()=>{
 
     it("should return a string stating person1 visited person2", () => {
 
-        expect(() => guy.visit(girl)).to.equal("joe visited lily")
+        expect(guy.visit(girl)).to.equal("joe visited lily")
 
     })
 
@@ -67,8 +67,8 @@ beforeEach(()=>{
 
     it("should call the update method and return true if successful",() => {
 
-        expect(() => guy.tryUpdate({name: 'john', age: 30})).to.be.true
-        expect(() => guy.tryUpdate('string')).to.be.false
+        expect(guy.tryUpdate({name: 'john', age: 30})).to.be.true
+        expect(guy.tryUpdate('string')).to.be.false
 
     })
 
